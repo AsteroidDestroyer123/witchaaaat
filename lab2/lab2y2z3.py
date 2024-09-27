@@ -6,4 +6,4 @@ for i in s:
         c+=400
     else:
         c+=200
-print(c)
+print(c/1000)
