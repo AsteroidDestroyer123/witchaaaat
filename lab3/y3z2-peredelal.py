@@ -8,7 +8,7 @@ for i in m:
 p=[]
 p.append(k[0])
 k[0]+=1
-print(p)
+
 for i in range(1,len(k)):
     c = k[i]
     if k[i]>max(p):
