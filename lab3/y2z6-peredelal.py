@@ -14,8 +14,11 @@ def sr_znach(a):
     return c/len(a)
 sr=round(sr_znach(k))
 m=[]
-for i in k:
-    m.append(abs(i-sr))
-o=m.index(min(m))
-k=k[:o+1]+[p]+k[o+1:]
+for i in range(len(k)):
+    if k[i]==sr:
+        k = k[:i + 1] + [p] + k[i + 1:]
+if k[-1]== sr:
+    k=k+[p]
 print(k)
+
+
