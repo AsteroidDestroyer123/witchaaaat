@@ -3,7 +3,7 @@
 #Нужно составить таблицу участников 2 этапа
 from prettytable import PrettyTable
 
-print('Вводите метса в команд от первой до последней в первой группе(1 место самое крутое)')
+
 
 
 class group1:
@@ -28,7 +28,6 @@ def get_top_attributes(cls, top_n=6):
     return sorted_attributes[:top_n]
 
 
-print('Вводите метса в команд от первой до последней во второй группе(1 место самое крутое)')
 
 
 class group2:
@@ -59,7 +58,7 @@ for name, value in get_top_attributes(group1, top_n=6):
     finallist.update({f"{name}": f"{value}"})
 for name, value in get_top_attributes(group2, top_n=6):
     finallist.update({f"{name}": f"{value}"})
-print('Название команды и место в своей группе')
+
 table = PrettyTable()
 table.field_names = ['Название команды', 'Место в группе']
 for i, j in finallist.items():
