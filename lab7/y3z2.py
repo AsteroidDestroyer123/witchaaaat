@@ -1,7 +1,7 @@
 #Соревнования по фоутболу проводяится в 2 этапа.
 #1 этап: 24 команды пазбиваются нв 2 группы по 12 и по 6 лучших команд из каждой группы выходят во 2 этап
 #Нужно составить таблицу участников 2 этапа
-from prettytable import PrettyTable
+
 
 
 
@@ -58,9 +58,7 @@ for name, value in get_top_attributes(group1, top_n=6):
     finallist.update({f"{name}": f"{value}"})
 for name, value in get_top_attributes(group2, top_n=6):
     finallist.update({f"{name}": f"{value}"})
-
-table = PrettyTable()
-table.field_names = ['Название команды', 'Место в группе']
+print('Список команд финалистов')
+print('Название команды, Место в группе')
 for i, j in finallist.items():
-    table.add_row([i, j])
-print(table)
+    print(i,j)
