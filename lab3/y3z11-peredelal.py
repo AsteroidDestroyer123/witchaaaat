@@ -2,10 +2,11 @@
 # найти найти для каждого экстремума значение x,y, вид экстремума
 from math import cos,sin,pi
 from random import uniform
+import numpy as np
 
 n=int(input('введите колличество точек n'))
-a=int(input('введите начало отрезка'))
-b=int(input('введите конец отрезка'))
+a=float(input('введите начало отрезка'))
+b=float(input('введите конец отрезка'))
 x1=[]
 y1=[]
 for g in range(n):
@@ -13,7 +14,7 @@ for g in range(n):
     x1.append(q)
     y1.append((cos(q)+q*sin(q)))
 m=[]
-for i in range(a,b+1):
+for i in np.arange(a,b+1):
     if a<=(pi/2)+(i*pi)<=b:
         m.append(i)
 x=[]
