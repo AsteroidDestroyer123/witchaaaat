@@ -1,3 +1,5 @@
+#15. Заданы массивы А и В, содержащие n и m элементов соответственно. 
+#Вставить массив В между k-м и (k + 1)-м элементами массива А (k задано).
 with open("massivA.txt", "w", encoding="utf-8") as file_a:
     file_a.write("whieefwhiefwhiohiwefihewfoiddjkjsd")
 with open("massivB.txt", "w", encoding="utf-8") as file_b:
